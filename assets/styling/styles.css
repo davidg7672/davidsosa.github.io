@@ -4,6 +4,20 @@ html {
         "Lucida Sans", Arial, sans-serif;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -154,6 +168,11 @@ html {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .intro-info span {
@@ -311,6 +330,46 @@ ul {
 .another-container {
     display: flex;
     flex-direction: column;
+}
+
+/* education */
+
+#education {
+    background-color: #474d5a;
+    color: white;
+    padding: 50px;
+}
+
+.school {
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.school-logo {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.school-info {
+    padding: 0.5rem;
+}
+
+.courses {
+    text-decoration: none;
+}
+
+.section {
+    left: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.courses > * {
+    font-weight: normal;
+    list-style-type: circle;
 }
 
 /* footer */
