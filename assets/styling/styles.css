@@ -20,6 +20,14 @@
         "Lucida Sans", Arial, sans-serif;
 }
 
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
 .name {
     display: flex;
     align-items: center;
@@ -72,4 +80,31 @@
 
 .link:hover::after {
     transform: scaleX(1);
+}
+
+/* footer */
+
+#footer {
+    height: 6em;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#social-container * {
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+#social-container a {
+    color: #575757;
+    transition: 0.4s;
+}
+
+#social-container a:hover {
+    color: #8a8888;
+}
+
+#copyright {
+    color: #686767;
+    font-size: 14px;
 }
