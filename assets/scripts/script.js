@@ -35,7 +35,7 @@ typewriter
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Also love ")
+    .typeString("Also a big fan of concerts")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
