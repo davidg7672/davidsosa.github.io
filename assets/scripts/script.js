@@ -15,7 +15,7 @@ typewriter
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("I'm a student at Gonzaga University (Go Zags!)")
+    .typeString("I'm a student at Gonzaga University")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -39,7 +39,7 @@ typewriter
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("thanks for visiting!")
+    .typeString("Thanks for visiting!")
     .pauseFor(1000)
     .deleteAll()
     .start();

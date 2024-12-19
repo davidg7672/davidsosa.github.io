@@ -1,4 +1,10 @@
-.header {
+/* Header Styles */
+html {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,35 +12,20 @@
     background-color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
-    transition: top 0.4s;
+    transition: top 0.4s ease;
+    padding: 0.5rem 1rem;
 }
 
-.container {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.name {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+.navbar-name {
+    flex: 1;
 }
 
 .logo {
@@ -42,16 +33,18 @@
     font-weight: bold;
     color: black;
     margin: 0;
-    transition: color 0.3s;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .logo:hover {
     color: #6c63ff;
 }
 
-.links-container {
+.navbar-links {
+    flex: 2;
     display: flex;
+    justify-content: flex-end;
     gap: 1.5rem;
 }
 
@@ -61,7 +54,7 @@
     font-size: 1rem;
     font-weight: 400;
     position: relative;
-    transition: color 0.3 ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .link:hover {
@@ -85,8 +78,25 @@
     transform: scaleX(1);
 }
 
+/* Mobile Styles for Header */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .link {
+        margin-right: 1rem;
+    }
+}
+
 /* introduction area */
-/* Introduction Section */
 #introduction {
     background-color: #f9f9f9;
     padding: 2rem 0;
@@ -101,6 +111,17 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+}
+
+#introduction .container {
+    width: 100%;
+}
+
+.name {
+    max-width: 100%;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .intro-picture {
@@ -122,10 +143,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 1rem;
     box-sizing: border-box;
-    /* Set a fixed height to prevent resizing */
     height: 100%;
+    width: 100%;
 }
 
 .intro-info h1 {
@@ -170,7 +192,6 @@
 }
 
 /* footer */
-
 #footer {
     height: 6em;
     text-align: center;
