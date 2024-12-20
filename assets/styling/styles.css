@@ -372,6 +372,11 @@ ul {
     list-style-type: circle;
 }
 
+/* experience */
+#experience {
+    padding: 80px;
+}
+
 /* footer */
 #footer {
     padding-top: 20px;
@@ -397,4 +402,9 @@ ul {
 #copyright {
     color: #686767;
     font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+    right: 3rem;
 }
