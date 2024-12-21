@@ -253,20 +253,6 @@ h1 {
     box-shadow: 12px 12px 1px #d7d3e7;
 }
 
-.about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-image .picture {
-    max-width: 90%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 1px rgb(0 0 0 / 20%);
-}
-
 /* Responsive Styles for About Section */
 @media (max-width: 768px) {
     .about-container {
@@ -276,7 +262,7 @@ h1 {
 
     .console,
     .about-image {
-        max-width: 100%;
+        max-width: 50%;
     }
 
     .console {
@@ -340,6 +326,10 @@ ul {
     flex-direction: column;
 }
 
+.about-picture {
+    max-width: 400px;
+}
+
 /* education */
 
 #education {
@@ -386,7 +376,6 @@ ul {
 }
 
 /* projects */
-/* Projects Section */
 #projects {
     background-color: #f5f5f5;
     padding: 4rem 2rem;
