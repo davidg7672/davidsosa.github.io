@@ -245,6 +245,20 @@ a {
     transform: translateY(-2px);
 }
 
+.btn-outline {
+    background: transparent;
+    color: #374151;
+    border: 2px solid #d1d5db;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-outline:hover {
+    background: #f9fafb;
+    border-color: #9ca3af;
+    transform: translateY(-2px);
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
@@ -487,6 +501,18 @@ section {
 
 .code-content .bracket {
     color: #e2e8f0;
+}
+
+.code-content .code-link {
+    color: #10b981;
+    text-decoration: underline;
+    text-decoration-color: #10b981;
+    transition: all 0.3s ease;
+}
+
+.code-content .code-link:hover {
+    color: #34d399;
+    text-decoration-color: #34d399;
 }
 
 .about-image {
