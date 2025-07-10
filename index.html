@@ -3,547 +3,526 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets//styling/styles.css" />
-        <title>David Sosa</title>
+        <meta
+            name="description"
+            content="David Sosa - Computer Science & Economics Student at Gonzaga University. Full-stack developer, runner, and tech enthusiast."
+        />
+        <meta
+            name="keywords"
+            content="David Sosa, Computer Science, Economics, Gonzaga University, Web Development, React, Node.js"
+        />
+        <meta name="author" content="David Sosa" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://davidsosa.github.io/" />
+        <meta property="og:title" content="David Sosa - Portfolio" />
+        <meta
+            property="og:description"
+            content="Computer Science & Economics Student at Gonzaga University"
+        />
+        <meta
+            property="og:image"
+            content="./assets/images/david-in-leavenworth.png"
+        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://davidsosa.github.io/" />
+        <meta property="twitter:title" content="David Sosa - Portfolio" />
+        <meta
+            property="twitter:description"
+            content="Computer Science & Economics Student at Gonzaga University"
+        />
+        <meta
+            property="twitter:image"
+            content="./assets/images/david-in-leavenworth.png"
+        />
+
+        <link rel="stylesheet" href="./assets/styling/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/images/github-142-svgrepo-com.svg"
+        />
+        <title>David Sosa - Portfolio</title>
+
+        <!-- Typewriter Effect -->
         <script
             src="https://unpkg.com/typewriter-effect@latest/dist/core.js"
             async
         ></script>
+
+        <!-- AOS Animation Library -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
-        <!-- header -->
-        <header id="header">
-            <nav class="navbar">
-                <div class="navbar-name">
-                    <a href="#introduction">
-                        <h2 class="logo">DAVID SOSA</h2>
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div
+                        class="hero-text"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name">David Sosa</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Computer Science & Economics
+                        </p>
+                        <div id="typewriter" class="typewriter-text"></div>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary"
+                                >View My Work</a
+                            >
+                            <a href="#contact" class="btn btn-secondary"
+                                >Get In Touch</a
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="hero-image"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                    >
+                        <div class="image-container">
+                            <img
+                                src="./assets/images/david-in-leavenworth.png"
+                                alt="David Sosa"
+                                class="hero-img"
+                            />
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="social-links"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="600"
+                >
+                    <a
+                        href="https://www.linkedin.com/in/davidgsosa"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <img
+                            src="./assets/images/linkedin-svgrepo-com.svg"
+                            alt="LinkedIn"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/davidg7672"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <img
+                            src="./assets/images/github-142-svgrepo-com.svg"
+                            alt="GitHub"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/davidsossaa/profilecard/?igsh=dDRkdXNpZmRoazNv"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <img
+                            src="./assets/images/instagram-svgrepo-com.svg"
+                            alt="Instagram"
+                        />
                     </a>
                 </div>
-                <div class="navbar-links">
-                    <a href="#about" class="link">ABOUT</a>
-                    <a href="#education" class="link">EDUCATION</a>
-                    <a href="#projects" class="link">PROJECTS</a>
-                    <!-- <a href="#experience" class="link">EXPERIENCE</a> -->
-                </div>
-            </nav>
-        </header>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
 
-        <!-- introduction -->
-        <section id="introduction">
-            <div class="container row">
-                <div class="intro-picture picture-div">
-                    <img
-                        src="./assets/images/david-in-leavenworth.png"
-                        alt="picture of david"
-                        class="picture"
-                    />
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
                 </div>
-                <div class="intro-info">
-                    <h1 class="name">David Sosa</h1>
-                    <span>Welcome to my story</span>
-                    <span id="app" class="typewriter"></span>
-                    <div class="links">
-                        <a href="https://www.linkedin.com/in/davidgsosa">
+                <div class="about-content">
+                    <div
+                        class="about-text"
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                    >
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                                <span class="code-title">David.java</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="language-java">
+<span class="keyword">package</span> aboutMe;
+
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">David</span> <span class="keyword">extends</span> <span class="class-name">Human</span> {
+    <span class="keyword">public</span> <span class="class-name">David</span>() {
+        <span class="keyword">String</span> fullName = <span class="string">"David Sosa"</span>;
+        <span class="keyword">String</span> homeTown = <span class="string">"Wenatchee, WA"</span>;
+        <span class="keyword">String</span> currentCity = <span class="string">"Spokane, WA"</span>;
+        <span class="keyword">String</span> school = <span class="string">"Gonzaga University"</span>;
+        <span class="keyword">String</span> major = <span class="string">"Computer Science and Economics"</span>;
+        <span class="keyword">int</span> expGraduation = <span class="number">2026</span>;
+        
+        <span class="class-name">Resume</span> resume = <span class="keyword">new</span> <span class="class-name">Resume</span>(<span class="string">"pdf"</span>);
+        
+        <span class="keyword">String</span>[] hobbiesAndInterests = {
+            <span class="string">"Running"</span>,
+            <span class="string">"Weight Lifting"</span>, 
+            <span class="string">"Cooking"</span>,
+            <span class="string">"Concerts"</span>,
+            <span class="string">"House Music"</span>,
+            <span class="string">"Jiu Jitsu"</span>,
+            <span class="string">"Traveling"</span>,
+            <span class="string">"Poker"</span>
+        };
+    }
+    
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method-name">contact</span>() {
+        <span class="keyword">String</span> email = <span class="string">"davidgsosa1@gmail.com"</span>;
+        <span class="keyword">String</span>[] links = {
+            <span class="string">"LinkedIn"</span>,
+            <span class="string">"Github"</span>, 
+            <span class="string">"Instagram"</span>
+        };
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="about-image"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
+                    >
+                        <div class="image-wrapper">
+                            <img
+                                src="./assets/images/david-with-lion.png"
+                                alt="David with a lion"
+                                class="about-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">My academic journey</p>
+                </div>
+                <div class="education-content">
+                    <div
+                        class="school-card"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                    >
+                        <div class="school-logo">
+                            <img
+                                src="./assets/images/university-logo.jpeg"
+                                alt="Gonzaga University"
+                            />
+                        </div>
+                        <div class="school-info">
+                            <h3 class="school-name">Gonzaga University</h3>
+                            <p class="school-degree">
+                                B.A. Computer Science, Economics
+                            </p>
+                            <p class="school-graduation">
+                                Expected Graduation: May 2026
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="coursework-grid">
+                        <div
+                            class="coursework-section"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay="200"
+                        >
+                            <h3 class="coursework-title">
+                                Relevant Coursework
+                            </h3>
+                            <ul class="coursework-list">
+                                <li>Fullstack Web Development (CPSC 322)</li>
+                                <li>Linux and DevOps (CPSC 334)</li>
+                                <li>Software Development (CPSC 224)</li>
+                                <li>UI/UX Design (CPSC 331)</li>
+                                <li>
+                                    Data Structures and Algorithms (CPSC 223)
+                                </li>
+                                <li>Operating Systems (CPSC 346)</li>
+                                <li>Computer Organization (CPSC 260)</li>
+                                <li>
+                                    Game Theory and Applied Economics (ECON 303)
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="coursework-section"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay="400"
+                        >
+                            <h3 class="coursework-title">
+                                Additional Coursework
+                            </h3>
+                            <ul class="coursework-list">
+                                <li>Regression Analysis (ECON 355)</li>
+                                <li>Money and Banking (ECON 352)</li>
+                                <li>Intermediate Macroeconomics (ECON 302)</li>
+                                <li>Statistics (MATH 321)</li>
+                                <li>Discrete Structures (MATH 231)</li>
+                                <li>
+                                    Calculus Series (MATH 157 - MATH 258 - MATH
+                                    259)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <div
+                        class="project-card"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                    >
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Cooked - DoorDash Mockup
+                            </h3>
+                            <p class="project-description">
+                                A MERN stack application inspired by DoorDash
+                                where local chefs can post their home-cooked
+                                meals. The platform enables authentic,
+                                affordable meal sharing in local communities.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
+                    >
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Website</h3>
+                            <p class="project-description">
+                                A modern, responsive personal portfolio website
+                                built with vanilla JavaScript, HTML, and CSS.
+                                Features smooth animations and a clean,
+                                professional design.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="400"
+                    >
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Sneaker Automation Bot
+                            </h3>
+                            <p class="project-description">
+                                An automated bot that navigates SNKRS, Adidas,
+                                and Nike platforms to purchase sneakers at
+                                lightning speed. Built to overcome the
+                                challenges of sneaker reselling and secure
+                                releases at retail prices.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Selenium</span>
+                                    <span class="tech-tag">BeautifulSoup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+                <div
+                    class="contact-content"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="200"
+                >
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:davidgsosa1@gmail.com"
+                                    >davidgsosa1@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📄</div>
+                            <div class="contact-details">
+                                <h3>Resume</h3>
+                                <a
+                                    href="./assets/DavidSosaResume.pdf"
+                                    target="_blank"
+                                    >Download PDF</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a
+                            href="https://www.linkedin.com/in/davidgsosa"
+                            class="social-btn linkedin"
+                            target="_blank"
+                            rel="noopener"
+                        >
                             <img
                                 src="./assets/images/linkedin-svgrepo-com.svg"
-                                alt="linkedin"
-                                class="icon linkedin"
+                                alt="LinkedIn"
                             />
+                            <span>LinkedIn</span>
                         </a>
-                        <a href="https://github.com/davidg7672">
+                        <a
+                            href="https://github.com/davidg7672"
+                            class="social-btn github"
+                            target="_blank"
+                            rel="noopener"
+                        >
                             <img
                                 src="./assets/images/github-142-svgrepo-com.svg"
-                                alt="github"
-                                class="icon github"
+                                alt="GitHub"
                             />
+                            <span>GitHub</span>
                         </a>
                         <a
                             href="https://www.instagram.com/davidsossaa/profilecard/?igsh=dDRkdXNpZmRoazNv"
+                            class="social-btn instagram"
+                            target="_blank"
+                            rel="noopener"
                         >
                             <img
                                 src="./assets/images/instagram-svgrepo-com.svg"
-                                alt="instagram"
-                                class="icon instagram"
+                                alt="Instagram"
                             />
+                            <span>Instagram</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- about -->
-        <section id="about">
-            <div class="another-container">
-                <h1 class="about-me">About David</h1>
-                <div class="about-container row">
-                    <div class="console">
-                        <span class="first-color">package</span>
-                        <span class="fifth-color">aboutMe</span
-                        ><span class="second-color">;</span>
-                        <br />
-                        <br />
-                        <span class="first-color">public</span>
-                        <span class="third-color">class</span>
-                        <span class="fifth-color">David</span>
-                        <span class="first-color">extends</span>
-                        <span class="fifth-color">Human</span>
-                        <span class="second-color">{</span>
-                        <br />
-                        <ul>
-                            <span class="first-color">public</span>
-                            <span class="fifth-color">David</span>
-                            <span class="second-color">() {</span>
-                            <br />
-                            <ul>
-                                <span class="third-color">String</span>
-                                <span class="second-color">fullName = </span>
-                                <span class="fourth-color">"David Sosa"</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">String</span>
-                                <span class="second-color">homeTown = </span>
-                                <span class="fourth-color">"Wenatchee, WA"</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">String</span>
-                                <span class="second-color">currentCity = </span>
-                                <span class="fourth-color">"Spokane, WA"</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">String</span>
-                                <span class="second-color">school = </span>
-                                <span class="fourth-color"
-                                    >"Gonzaga University"</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">String</span>
-                                <span class="second-color">major = </span>
-                                <span class="fourth-color"
-                                    >"Computer Science and Economics"</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">int</span>
-                                <span class="second-color"
-                                    >expGraduation =
-                                </span>
-                                <span class="fourth-color">May 2026</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">Resume</span>
-                                <span class="second-color">resume = </span>
-                                <span class="first-color">new</span>
-                                <span class="second-color">Resume(</span
-                                ><span class="fourth-color">"</span
-                                ><!-- 
-                             --><span
-                                    ><a
-                                        href="assets/DavidSosaResume.pdf"
-                                        class="fourth-color"
-                                        >pdf</a
-                                    ></span
-                                ><!-- 
-                             --><span class="fourth-color">"</span
-                                ><span class="second-color">)</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">String[]</span>
-                                <span class="second-color"
-                                    >hobbiesAndInterests =
-                                </span>
-                                <span class="first-color">new </span>
-                                <span class="third-color">String[]</span>
-                                <span class="second-color">{</span>
-                                <br />
-                                <ul>
-                                    <span class="fourth-color">"Running"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color"
-                                        >"Weight Lifting"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"Cooking"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"Concerts"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color"
-                                        >"House Music"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"Jiu Jitsu"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"Traveling"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"Poker"</span>
-                                    <br />
-                                </ul>
-                                <span class="second-color">}</span>
-                                <br />
-                            </ul>
-                            <span class="second-color">}</span>
-                            <br />
-                            <span class="first-color">public static</span>
-                            <span class="third-color">void</span>
-                            <span class="fifth-color">contact</span
-                            ><!-- 
-                     --><span class="second-color">() {</span>
-                            <ul>
-                                <span class="third-color">Email</span>
-                                <span class="second-color">email = </span>
-                                <span class="first-color">new</span>
-                                <span class="second-color">Email(</span
-                                ><span class="fourth-color">"</span
-                                ><!-- 
-                             --><span
-                                    ><a
-                                        href="mailto:davidgsosa1@gmail.com"
-                                        class="fourth-color"
-                                        >davidgsosa1@gmail.com</a
-                                    ></span
-                                ><!-- 
-                             --><span class="fourth-color">"</span
-                                ><span class="second-color">)</span
-                                ><span class="second-color">;</span>
-                                <br />
-                                <span class="third-color">String[]</span>
-                                <span class="second-color">links = </span>
-                                <span class="first-color">new </span>
-                                <span class="third-color">String[]</span>
-                                <span class="second-color">{</span>
-                                <br />
-                                <ul>
-                                    <span class="fourth-color">"</span
-                                    ><!-- 
-                                --><a
-                                        href="https://www.linkedin.com/in/davidgsosa/"
-                                        class="fourth-color"
-                                        target="_blank"
-                                        >LinkedIn</a
-                                    ><!-- 
-                                 --><span class="fourth-color">"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"</span
-                                    ><!-- 
-                                --><a
-                                        href="https://github.com/davidg7672"
-                                        class="fourth-color"
-                                        target="_blank"
-                                        >Github</a
-                                    ><!-- 
-                                 --><span class="fourth-color">"</span
-                                    ><span class="second-color">,</span>
-                                    <br />
-                                    <span class="fourth-color">"</span
-                                    ><!-- 
-                                --><a
-                                        href="https://www.instagram.com/davidsossaa/profilecard/?igsh=dDRkdXNpZmRoazNv"
-                                        class="fourth-color"
-                                        target="_blank"
-                                        >Instagram</a
-                                    ><!-- 
-                                 --><span class="fourth-color">"</span>
-                                    <br />
-                                </ul>
-                                <span class="second-color">}</span>
-                            </ul>
-                            <span class="second-color">}</span>
-                            <br />
-                        </ul>
-                        <span class="second-color">}</span>
-                    </div>
-
-                    <div class="about-picture div-picture">
-                        <img
-                            src="./assets/images/david-with-lion.png"
-                            alt="David with a lion"
-                            class="picture"
-                        />
-                    </div>
-                </div>
-                <p class="about-me bold">Feel Free to Reach Out!</p>
-            </div>
-        </section>
-
-        <!-- education -->
-        <section id="education" class="container column">
-            <h1>Education</h1>
-            <div class="container school row">
-                <img
-                    class="school-logo"
-                    src="./assets/images/university-logo.jpeg"
-                    alt="Gonzaga University"
-                />
-                <div class="school-info column">
-                    <h2 class="school-name">Gonzaga University</h2>
-                    <h3>B.A. Computer Science, Economics</h3>
-                    <p>Expect Graduation: May 2026</p>
-                </div>
-            </div>
-            <div class="coursework">
-                <div class="section">
-                    <h2 class="course-header">Relevant Coursework</h2>
-                    <ul class="courses">
-                        <li>Fullstack Web Development (CPSC 322)</li>
-                        <li>Linux and DevOps (CPSC 334)</li>
-                        <li>Software Development (CPSC 224)</li>
-                        <li>UI/UX Design (CPSC 331)</li>
-                        <li>Data Structures and Algorithms (CPSC 223)</li>
-                        <li>Operating Systems (CPSC 346)</li>
-                        <li>Computer Organization (CPSC 260)</li>
-                        <li>Game Theory and Applied Economics (ECON 303)</li>
-                    </ul>
-                </div>
-                <div class="section">
-                    <h2 class="course-header">Additional Coursework</h2>
-                    <ul class="courses">
-                        <li>Regression Analysis (ECON 355)</li>
-                        <li>Money and Banking (ECON 352)</li>
-                        <li>Intermediate Macroeconomics (ECON 302)</li>
-                        <li>Statistics (MATH 321)</li>
-                        <li>Discrete Structures (MATH 231)</li>
-                        <li>
-                            Calculus Series (MATH 157 - MATH 258 - MATH 259)
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- projects and skills -->
-        <section id="projects" class="container column">
-            <div class="projects container column">
-                <h1 class="project-header">Projects</h1>
-                <div class="projects">
-                    <div class="project cooked">
-                        <h3 class="project-header">
-                            Cooked - DoorDash Mockup (MERN Stack)
-                        </h3>
-                        <div class="project-description">
-                            <p class="description">
-                                Cooked was built using the MERN Stack with
-                                inspiration from DoorDash. The idea behind
-                                Cooked was to build a piece of software, where
-                                local chefs could post their home cooked meals.
-                                Meals could be sold more authentic, and at
-                                affordable prices.
-                            </p>
-                            <div class="project-technologies">
-                                <h4>Technologies</h4>
-                                <ul>
-                                    <li>React</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>MongoDB</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project personal-site">
-                        <h3 class="project-header">Personal Website</h3>
-                        <div class="project-description">
-                            <p class="description">
-                                Weekend project built in Vanilla JavaScript,
-                                HTML, and CSS. Hosted on GitHub Pages.
-                            </p>
-                            <br />
-                            <span>
-                                Typewriter credit:
-                                https://github.com/tameemsafi/typewriterjs
-                            </span>
-                            <div class="project-technologies">
-                                <h4>Technologies</h4>
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project sneaker-automation-bot">
-                        <h3 class="project-header">Sneaker Automation Bot</h3>
-                        <div class="project-description">
-                            <p class="description">
-                                Growing up, I've always enjoyed collecting
-                                different types of sneakers, however the problem
-                                was getting them at a more affordable price. As
-                                the rise of Sneaker Reselling became more
-                                evident, you could no longer have the change of
-                                buying shoes for the listed price. This Sneaker
-                                Automation Bot, goes onto SNKRS/Adidas/Nike and
-                                buys the sneakers at a lightning pacing.
-                            </p>
-                            <div class="project-technologies">
-                                <h4>Technologies</h4>
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>Selenium</li>
-                                    <li>BeautifulSoup</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- </div>
-            <div class="skills container column">
-                <h1 class="skills-header">Skills</h1>
-                <div class="fullstack-web-development container column">
-                    <h3>Fullstack Web Development</h3>
-                    <div class="skills-description">
-                        <div class="technologies">
-                            <ul>
-                                <li>React</li>
-                                <li>Express.js</li>
-                                <li>Node.js</li>
-                                <li>PostgreSQL</li>
-                                <li>MongoDB</li>
-                                <li>Bootstrap</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="web-scraping container column">
-                    <h3>Web Scraping</h3>
-                    <div class="skills-description">
-                        <div class="technologies">
-                            <ul>
-                                <li>Selenium</li>
-                                <li>Scrappy</li>
-                                <li>Beautiful Soup (BS4)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="data-economic-analysis container column">
-                    <h3>Data and Economics Analysis</h3>
-                    <div class="skills-description">
-                        <div class="technologies">
-                            <ul>
-                                <li>Python</li>
-                                <li>R</li>
-                                <li>Excel</li>
-                                <li>FRED Economic Data Tools</li>
-                                <li>Regression Analysis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-
-        <!-- experience -->
-        <!-- <section id="experience" class="container column">
-            <h2>Experience</h2>
+        <!-- Footer -->
+        <footer class="footer">
             <div class="container">
-                <a
-                    href="https://bitcoinmagazine.com/authors/marathon-digital-holdings"
-                >
-                    <img
-                        src="./assets/images/marathon.svg"
-                        alt="marathon"
-                        class="marathong"
-                    />
-                </a>
-                <div>is this real</div>
-            </div>
-            <h2>Additional Experience</h2>
-            <div class="additional-experience container column">
-                <div class="container south row">
-                    <div class="container column south-description">
-                        <h3 class="south-title">South at Pybus</h3>
-                        <p>June 2020 to August 2024</p>
-                        <ul class="south-list">
-                            <li>
-                                Built long last relationships with customers
-                            </li>
-                            <li>Gave training to new servers</li>
-                            <li>
-                                Served as a mentor and gave advice on upselling
-                                and customer service
-                            </li>
-                            <li>Employee of the Month 3+ Times</li>
-                            <li>
-                                Consistently average above a 20% tip percentage
-                            </li>
-                        </ul>
-                    </div>
-                    <a
-                        href="https://pybuspublicmarket.org/essential_grid/south/"
-                    >
-                        <img src="./assets/images/south.png" alt="south logo" />
-                    </a>
+                <div class="footer-content">
+                    <p class="footer-text">Built with ❤️ by David Sosa</p>
+                    <p class="footer-year">© 2024</p>
                 </div>
-            </div> -->
-        <!-- </section> -->
-
-        <!-- hobbies -->
-        <!-- <section id="hobbies container column">
-            <div></div>
-        </section> -->
-
-        <!-- <section id="book-recommendations">
-            <div class="container column">
-                <h1>Book Recommendations</h1>
-                <ul>
-                    <li>
-                        <h3>Fiction</h3>
-                        <ul>
-                            <li>Don Quixote</li>
-                            <li>The Master and Margarita</li>
-                            <li>Crime and Punishment</li>
-                            <li>Brave New World</li>
-                            <li>I am Legend</li>
-                            <li>American Psycho</li>
-                            <li>The Idiot</li>
-                            <li>Notes from the Underground</li>
-                            <li>The Sailor Who Fell from Grace with the Sea</li>
-                            <li>The Count of Monte Cristo</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        Philosophy
-                        <ul>
-                            <li>The Republic</li>
-                            <li>Beyond Good and Evil</li>
-                            <li>The Campaigns of Alexander</li>
-                            <li>A Confession</li>
-                            <li>Diogenes teh Cynic</li>
-
-                            <li>The Wisdom of Life</li>
-                            <li>No Longer Human</li>
-                            <li>Discourses and Selected Writings</li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
-        </section> -->
+        </footer>
 
-        <!-- footer -->
-        <section class="container column" id="footer">
-            <div class="container row" id="social-container">
-                <a href="https://www.linkedin.com/in/davidgsosa">LinkedIn</a>
-                <span>•</span>
-                <a href="https://github.com/davidg7672">Github</a>
-                <span>•</span>
-                <a
-                    href="https://www.instagram.com/davidsossaa/profilecard/?igsh=dDRkdXNpZmRoazNv"
-                    >Instagram</a
-                >
-                <span>•</span>
-                <a href="mailto:davidgsosa1@gmail.com" target="_blank">Email</a>
-            </div>
-            <div>
-                <p id="copyright">Built by David in December 2024</p>
-            </div>
-        </section>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path d="M18 15l-6-6-6 6" />
+            </svg>
+        </button>
 
-        <script charset="utf-8" src="./assets/scripts/script.js"></script>
+        <script src="./assets/scripts/script.js"></script>
     </body>
 </html>
