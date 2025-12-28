@@ -1,11 +1,3 @@
-// Initialize AOS (Animate On Scroll)
-AOS.init({
-    duration: 800,
-    easing: "ease-in-out",
-    once: true,
-    offset: 100,
-});
-
 // DOM Elements
 const navbar = document.getElementById("navbar");
 const navToggle = document.getElementById("nav-toggle");

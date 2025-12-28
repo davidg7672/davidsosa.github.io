@@ -81,10 +81,7 @@ a {
 }
 
 .logo-text {
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2563eb;
 }
 
 .nav-menu {
@@ -107,7 +104,7 @@ a {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: #2563eb;
     transition: width 0.3s ease;
 }
 
@@ -182,10 +179,7 @@ a {
 }
 
 .name {
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2563eb;
     display: block;
 }
 
@@ -223,7 +217,7 @@ a {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: #2563eb;
     color: white;
     box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
 }
@@ -290,11 +284,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        135deg,
-        rgba(37, 99, 235, 0.1),
-        rgba(124, 58, 237, 0.1)
-    );
+    background: rgba(37, 99, 235, 0.1);
     pointer-events: none;
 }
 
@@ -592,7 +582,7 @@ section {
 
 .coursework-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -624,6 +614,78 @@ section {
     border-bottom: none;
 }
 
+/* Experience Section */
+.experience {
+    background: #ffffff;
+    padding: 5rem 0;
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    padding: 0;
+}
+
+.experience-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.experience-company {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #2563eb;
+}
+
+.experience-location {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.experience-period {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.experience-description {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-description li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.experience-description li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.experience-description li:last-child {
+    border-bottom: none;
+}
+
 /* Projects Section */
 .projects {
     background: #ffffff;
@@ -636,18 +698,7 @@ section {
 }
 
 .project-card {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #f3f4f6;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    border-color: #d1d5db;
+    padding: 0;
 }
 
 .project-title {
@@ -658,9 +709,35 @@ section {
 }
 
 .project-description {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
     color: #6b7280;
-    margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+.project-description li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.project-description li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.project-description li:first-child {
+    padding-top: 0;
+}
+
+.project-description li:last-child {
+    padding-bottom: 0;
 }
 
 .project-tech h4 {
@@ -686,9 +763,19 @@ section {
     transition: all 0.3s ease;
 }
 
-.tech-tag:hover {
-    background: #e5e7eb;
-    transform: translateY(-1px);
+.project-links {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f3f4f6;
+}
+
+.project-link {
+    display: inline-block;
+    color: #2563eb;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 /* Contact Section */
@@ -834,7 +921,7 @@ section {
     right: 2rem;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: #2563eb;
     color: white;
     border: none;
     border-radius: 50%;
@@ -962,7 +1049,7 @@ section {
     }
 
     .project-card {
-        padding: 1.5rem;
+        padding: 0;
     }
 
     .contact-item {

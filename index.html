@@ -58,13 +58,6 @@
             src="https://unpkg.com/typewriter-effect@latest/dist/core.js"
             async
         ></script>
-
-        <!-- AOS Animation Library -->
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!-- Navigation -->
@@ -72,8 +65,9 @@
             <div class="nav-container">
                 <div class="nav-menu" id="nav-menu">
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#education" class="nav-link">Education</a>
                     <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
@@ -84,15 +78,10 @@
             </div>
         </nav>
 
-        <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-container">
                 <div class="hero-content">
-                    <div
-                        class="hero-text"
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                    >
+                    <div class="hero-text">
                         <h1 class="hero-title">
                             <span class="greeting">Hello, I'm</span>
                             <span class="name">David Sosa</span>
@@ -135,12 +124,7 @@
                             </a>
                         </div>
                     </div>
-                    <div
-                        class="hero-image"
-                        data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="300"
-                    >
+                    <div class="hero-image">
                         <div class="image-container">
                             <img
                                 src="./assets/images/david-in-leavenworth.png"
@@ -151,12 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="social-links"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="600"
-                >
+                <div class="social-links">
                     <a
                         href="https://www.linkedin.com/in/davidgsosa"
                         class="social-link"
@@ -227,16 +206,12 @@
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
+                <div class="section-header">
                     <h2 class="section-title">About Me</h2>
                     <p class="section-subtitle">Get to know me better</p>
                 </div>
                 <div class="about-content">
-                    <div
-                        class="about-text"
-                        data-aos="fade-right"
-                        data-aos-duration="800"
-                    >
+                    <div class="about-text">
                         <div class="code-block">
                             <div class="code-header">
                                 <span class="code-dot red"></span>
@@ -261,13 +236,10 @@
         
         <span class="keyword">String</span>[] hobbiesAndInterests = {
             <span class="string">"Running"</span>,
-            <span class="string">"Weight Lifting"</span>, 
-            <span class="string">"Cooking"</span>,
-            <span class="string">"Concerts"</span>,
-            <span class="string">"House Music"</span>,
+            <span class="string">"Hiking"</span>, 
             <span class="string">"Jiu Jitsu"</span>,
-            <span class="string">"Traveling"</span>,
-            <span class="string">"Poker"</span>
+            <span class="string">"Bouldering"</span>,
+            <span class="string">"Cooking"</span>
         };
     }
     
@@ -283,12 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="about-image"
-                        data-aos="fade-left"
-                        data-aos-duration="800"
-                        data-aos-delay="200"
-                    >
+                    <div class="about-image">
                         <div class="image-wrapper">
                             <img
                                 src="./assets/images/david-with-lion.png"
@@ -301,19 +268,171 @@
             </div>
         </section>
 
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Vamonos Junk Full Stack Project
+                            </h3>
+                            <ul class="project-description">
+                                <li>
+                                    📅 Full-stack online scheduling service for
+                                    local business
+                                </li>
+                                <li>
+                                    💻 Built with <strong>React</strong>,
+                                    <strong>Node.js</strong>,
+                                    <strong>Express</strong>, and
+                                    <strong>PostgreSQL</strong>
+                                </li>
+                                <li>
+                                    ⚡ Reduces call times and scheduling
+                                    conflicts
+                                </li>
+                            </ul>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.vamonosjunk.com/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="project-link"
+                                    >View Live Site</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Moving Company CRM Full Stack Project
+                            </h3>
+                            <ul class="project-description">
+                                <li>
+                                    📊 Full-stack CRM for local moving company
+                                </li>
+                                <li>
+                                    💻 Built with <strong>React</strong>,
+                                    <strong>Express</strong>,
+                                    <strong>PostgreSQL</strong>, and
+                                    <strong>Node.js</strong>
+                                </li>
+                                <li>📋 Tracks jobs, customers, and vehicles</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Log Analysis AI Tool - Itron (Capstone Project)
+                            </h3>
+                            <ul class="project-description">
+                                <li>
+                                    🤖 AI tool for finding anomalies in log
+                                    archives from CCU100s (Electrical, Gas, and
+                                    Water Meters)
+                                </li>
+                                <li>
+                                    🔧 Cleaned and normalized data to identify
+                                    patterns
+                                </li>
+                                <li>
+                                    📈 Practiced Scrum and Agile methodologies
+                                </li>
+                                <li>🚧 <em>In progress</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                MySocial - Facebook Mockup
+                            </h3>
+                            <ul class="project-description">
+                                <li>🌐 Full-stack social media platform</li>
+                                <li>
+                                    💻 Built with <strong>React.js</strong>,
+                                    <strong>MUI</strong>,
+                                    <strong>Redux</strong>,
+                                    <strong>Node.js</strong>,
+                                    <strong>Express</strong>,
+                                    <strong>MongoDB</strong>, and
+                                    <strong>Bcrypt</strong>
+                                </li>
+                                <li>
+                                    ✨ Features: authentication, dark mode, and
+                                    mobile responsiveness
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Nike/SNKR/Adidas Automation Bot
+                            </h3>
+                            <ul class="project-description">
+                                <li>
+                                    🤖 Automation bot for purchasing exclusive
+                                    sneakers
+                                </li>
+                                <li>
+                                    💻 Built with
+                                    <strong>JavaScript</strong> and
+                                    <strong>Puppeteer</strong>
+                                </li>
+                                <li>
+                                    👟 Targets Nike, SNKRS, and Adidas platforms
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Website</h3>
+                            <ul class="project-description">
+                                <li>🌐 Personal portfolio website</li>
+                                <li>
+                                    💻 Built with <strong>JavaScript</strong>,
+                                    <strong>HTML</strong>, and
+                                    <strong>CSS</strong>
+                                </li>
+                                <li>☁️ Hosted on GitHub Pages</li>
+                            </ul>
+                            <div class="project-links">
+                                <a
+                                    href="https://davidg7672.github.io/davidsosa.github.io/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="project-link"
+                                    >View Live Site</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Education Section -->
         <section id="education" class="education">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
+                <div class="section-header">
                     <h2 class="section-title">Education</h2>
                     <p class="section-subtitle">My academic journey</p>
                 </div>
                 <div class="education-content">
-                    <div
-                        class="school-card"
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                    >
+                    <div class="school-card">
                         <div class="school-logo">
                             <img
                                 src="./assets/images/university-logo.jpeg"
@@ -323,7 +442,8 @@
                         <div class="school-info">
                             <h3 class="school-name">Gonzaga University</h3>
                             <p class="school-degree">
-                                B.A. Computer Science, Economics
+                                Bachelors of Arts in Computer Science - Minor
+                                Economics
                             </p>
                             <p class="school-graduation">
                                 Expected Graduation: May 2026
@@ -332,50 +452,46 @@
                     </div>
 
                     <div class="coursework-grid">
-                        <div
-                            class="coursework-section"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                            data-aos-delay="200"
-                        >
+                        <div class="coursework-section">
+                            <h3 class="coursework-title">
+                                Programming Languages/Software
+                            </h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Ruby</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">C/C++</span>
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Git</span>
+                                <span class="tech-tag">Excel</span>
+                            </div>
+                        </div>
+
+                        <div class="coursework-section">
+                            <h3 class="coursework-title">
+                                Frameworks/Libraries
+                            </h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Github</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="coursework-section">
                             <h3 class="coursework-title">
                                 Relevant Coursework
                             </h3>
                             <ul class="coursework-list">
-                                <li>Fullstack Web Development (CPSC 322)</li>
-                                <li>Linux and DevOps (CPSC 334)</li>
-                                <li>Software Development (CPSC 224)</li>
-                                <li>UI/UX Design (CPSC 331)</li>
-                                <li>
-                                    Data Structures and Algorithms (CPSC 223)
-                                </li>
-                                <li>Operating Systems (CPSC 346)</li>
-                                <li>Computer Organization (CPSC 260)</li>
-                                <li>
-                                    Game Theory and Applied Economics (ECON 303)
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div
-                            class="coursework-section"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                            data-aos-delay="400"
-                        >
-                            <h3 class="coursework-title">
-                                Additional Coursework
-                            </h3>
-                            <ul class="coursework-list">
-                                <li>Regression Analysis (ECON 355)</li>
-                                <li>Money and Banking (ECON 352)</li>
-                                <li>Intermediate Macroeconomics (ECON 302)</li>
-                                <li>Statistics (MATH 321)</li>
-                                <li>Discrete Structures (MATH 231)</li>
-                                <li>
-                                    Calculus Series (MATH 157 - MATH 258 - MATH
-                                    259)
-                                </li>
+                                <li>Database Management</li>
+                                <li>Full-stack Web Development</li>
+                                <li>Linux & DevOps</li>
                             </ul>
                         </div>
                     </div>
@@ -383,92 +499,56 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Projects</h2>
-                    <p class="section-subtitle">Some of my recent work</p>
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p>A little unrelated, but still passionate</p>
                 </div>
-                <div class="projects-grid">
-                    <div
-                        class="project-card"
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                    >
-                        <div class="project-content">
-                            <h3 class="project-title">
-                                Cooked - DoorDash Mockup
+                <div class="experience-content">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3 class="experience-title">
+                                Server/Server Mentor
                             </h3>
-                            <p class="project-description">
-                                A MERN stack application inspired by DoorDash
-                                where local chefs can post their home-cooked
-                                meals. The platform enables authentic,
-                                affordable meal sharing in local communities.
-                            </p>
-                            <div class="project-tech">
-                                <h4>Technologies</h4>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">Express.js</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                </div>
-                            </div>
+                            <span class="experience-company"
+                                >South at Pybus - Leavenworth</span
+                            >
+                            <span class="experience-location"
+                                >Wenatchee & Leavenworth, Washington</span
+                            >
                         </div>
-                    </div>
+                        <p class="experience-period">June 2020 - August 2025</p>
+                        <ul class="experience-description">
+                            <li>
+                                Took orders and built lasting relationships with
+                                customers.
+                            </li>
+                            <li>Lead monthly meetings.</li>
+                            <li>
+                                Trained and served as a mentor to new servers,
+                                gave advice on upselling and customer service.
+                            </li>
+                            <li>Maintained a tip average of over 20%.</li>
+                        </ul>
+                        <h3 class="experience-title">Bartender</h3>
+                        <p class="experience-period">May 2025 - August 2025</p>
 
-                    <div
-                        class="project-card"
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                        data-aos-delay="200"
-                    >
-                        <div class="project-content">
-                            <h3 class="project-title">Personal Website</h3>
-                            <p class="project-description">
-                                A modern, responsive personal portfolio website
-                                built with vanilla JavaScript, HTML, and CSS.
-                                Features smooth animations and a clean,
-                                professional design.
-                            </p>
-                            <div class="project-tech">
-                                <h4>Technologies</h4>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">HTML</span>
-                                    <span class="tech-tag">CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="project-card"
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                        data-aos-delay="400"
-                    >
-                        <div class="project-content">
-                            <h3 class="project-title">
-                                Sneaker Automation Bot
-                            </h3>
-                            <p class="project-description">
-                                An automated bot that navigates SNKRS, Adidas,
-                                and Nike platforms to purchase sneakers at
-                                lightning speed. Built to overcome the
-                                challenges of sneaker reselling and secure
-                                releases at retail prices.
-                            </p>
-                            <div class="project-tech">
-                                <h4>Technologies</h4>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">Selenium</span>
-                                    <span class="tech-tag">BeautifulSoup</span>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="experience-description">
+                            <li>
+                                Gained knowledge on South American Drinks
+                                (Mexico, Brazil, Peru)
+                            </li>
+                            <li>
+                                Gained knowledge on Latin Spirits (Tequila,
+                                Mezcal, Pisco, Cachaca, Rum)
+                            </li>
+                            <li>
+                                Built and prepped both Latin Drinks, as well as
+                                traditional general drinks
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -477,16 +557,11 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
+                <div class="section-header">
                     <h2 class="section-title">Get In Touch</h2>
                     <p class="section-subtitle">Let's work together</p>
                 </div>
-                <div
-                    class="contact-content"
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-delay="200"
-                >
+                <div class="contact-content">
                     <div class="contact-info">
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
@@ -555,7 +630,9 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
-                    <p class="footer-text">Built with ❤️ by David Sosa</p>
+                    <p class="footer-text">
+                        Built with excitement by David Sosa
+                    </p>
                     <p class="footer-year">© 2024</p>
                 </div>
             </div>
